@@ -1,10 +1,10 @@
 # Final Project Komputasi Numerik
 
-##**Nama**          : Willy Dava Nugraha
+## **Nama**          : Willy Dava Nugraha
 
-##**NRP**           : 5025241090
+## **NRP**           : 5025241090
 
-##**Mata Kuliah**   : Komputasi Numerik
+## **Mata Kuliah**   : Komputasi Numerik
 
 ## Nama Anggota Kelompok A01
 |    NRP     |      Nama      |
