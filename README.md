@@ -18,7 +18,7 @@
 ## Soal No 25
 Carilah nilai f(x) ketika x = 16 dengan menggunakan Newton Gregory Forward dengan Xo = 15 dan Y sebenarnya = 897104 [Cari juga nilai Et]
 
-| x  | y        | Δ f(x)     | Δ² f(x)    | Δ³ f(x)    | Δ⁴ f(x)    |
+| x  | y        | Δf(x)      | Δ²f(x)     | Δ³f(x)     | Δ⁴f(x)     |
 |----|----------|------------|------------|------------|------------|
 | 3  | -741     |            |            |            |            |
 |    |          | 555        |            |            |            |
