@@ -35,3 +35,11 @@ server {
     }
 }
 ```
+
+```
+ln -s /etc/nginx/sites-available/expeditioners.com /etc/nginx/sites-enabled/
+```
+
+```
+nginx -t
+```
