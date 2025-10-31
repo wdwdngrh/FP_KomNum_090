@@ -95,10 +95,8 @@ server {
 
     root /var/www/html;
     index profile_gustave.html;
-
-    log_format custom_log '[$time_local] Jarkom Node Gustave Access from $remote_addr using method "$request" returned status $status with $body_bytes_sent bytes sent in $request_time seconds';
                                
-    access_log /tmp/access.log custom_log;
+    access_log /tmp/access.log;
     error_log  /tmp/error.log;
 
     location / {
@@ -109,6 +107,30 @@ server {
 
 ```
 ln -s /etc/nginx/sites-available/jarkom /etc/nginx/sites-enabled/jarkom
+```
+
+```
+server {
+    listen 8080;
+    listen 8888;
+    server_name gustave33.com;
+
+    root /var/www/html;
+    index profile_gustave.html;
+
+    access_log /tmp/access.log custom_gustave;
+    error_log  /tmp/error.log;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+```
+    log_format custom_gustave '[$time_local] Jarkom Node Gustave Access from $remote_addr '
+                              'using method "$request" returned status $status '
+                              'with $body_bytes_sent bytes sent in $request_time seconds';
 ```
 
 ```
