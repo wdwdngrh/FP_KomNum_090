@@ -1,4 +1,8 @@
 ```
+/etc/nginx/sites-available/expeditioners.com
+```
+
+```
 server {
     listen 80;
     server_name expeditioners.com;
