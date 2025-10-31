@@ -1,6 +1,8 @@
 # Renoir, dns master
 
-```nano /etc/bind/named.conf.local```
+```
+nano /etc/bind/named.conf.local
+```
 
 ```
 options {
