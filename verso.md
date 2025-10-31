@@ -103,16 +103,16 @@ nano /etc/bind/delegasi/expedition.gustave33.com
 
 ```
 $TTL 86400
-@ IN SOA gustave33.com. root.gustave33.com. (
+@ IN SOA ns1.gustave33.com. root.gustave33.com. (
     6 ; serial
     3600 ; refresh
     1800 ; retry
     604800 ; expire
     86400 ) ; minimum
 
-@           IN NS     gustave33.com.
+@           IN NS     ns1.expedition.gustave33.com.
+ns1         IN A      10.24.3.2
 @           IN A      10.24.2.3
-expedition  IN A      10.24.2.3
 ```
 
 ```
