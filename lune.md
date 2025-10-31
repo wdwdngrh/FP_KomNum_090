@@ -95,6 +95,24 @@ server {
 ```
 
 ```
+server {
+    listen 8000;
+    server_name lune33.com;
+
+    root /var/www/html;
+    index info.html;
+
+    access_log /tmp/access_info.log;
+    error_log /tmp/error_info.log;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+
+```
+
+```
 ln -s /etc/nginx/sites-available/jarkom /etc/nginx/sites-enabled/jarkom
 ```
 
