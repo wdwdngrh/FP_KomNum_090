@@ -100,7 +100,8 @@ $TTL 86400
 ns1         IN A      10.24.3.1
 ns2         IN A      10.24.3.2
 www         IN A      10.24.2.3
-expedition  IN CNAME  gustave.com.
+expedition   IN NS  ns1.expedition.gustave33.com.
+ns1.expedition IN A 10.24.2.3
 ```
 
 ```
