@@ -72,6 +72,14 @@ nano /var/www/html/profile_lune.html
 ```
 
 ```
+nano /etc/nginx/nginx.conf
+```
+
+```
+log_format custom_log '[$time_local] Jarkom Node Lune Access from $remote_addr using method "$request" returned status $status with $body_bytes_sent bytes sent in $request_time seconds';
+```
+
+```
 nano /etc/nginx/sites-available/jarkom
 ```
 
@@ -82,8 +90,6 @@ server {
 
     root /var/www/html;
     index profil_lune.html;
-
-    log_format custom_log '[$time_local] Jarkom Node Lune Access from $remote_addr using method "$request" returned status $status with $body_bytes_sent bytes sent in $request_time seconds';
                                
     access_log /tmp/access.log custom_log;
     error_log  /tmp/error.log;
