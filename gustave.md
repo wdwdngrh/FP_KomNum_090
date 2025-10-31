@@ -128,6 +128,10 @@ server {
 ```
 
 ```
+nano /etc/nginx/nginx.conf
+```
+
+```
     log_format custom_gustave '[$time_local] Jarkom Node Gustave Access from $remote_addr '
                               'using method "$request" returned status $status '
                               'with $body_bytes_sent bytes sent in $request_time seconds';
