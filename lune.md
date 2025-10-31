@@ -8,7 +8,7 @@ nano /var/www/html/profile_lune.html
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gustave</title>
+<title>Lune</title>
 <style>
   body {
     margin: 0;
@@ -41,42 +41,29 @@ nano /var/www/html/profile_lune.html
     color: #ffd166;
     margin-top: 1.5rem;
   }
-  p, li {
-    line-height: 1.6;
-  }
-  ul {
-    list-style: none;
-    padding-left: 0;
-  }
-  li::before {
-    content: "▹ ";
-    color: #00e5ff;
-  }
-  footer {
-    text-align: center;
-    font-size: 0.85rem;
-    color: #ccc;
-    margin-top: 2rem;
-  }
+  p, li { line-height: 1.6; }
+  ul { list-style: none; padding-left: 0; }
+  li::before { content: "▹ "; color: #00e5ff; }
+  footer { text-align: center; font-size: 0.85rem; color: #ccc; margin-top: 2rem; }
 </style>
 </head>
 <body>
   <div class="container">
-    <h1>Gustave</h1>
-    <p><i>“For those who come after. Right?”</i></p>
+    <h1>Lune</h1>
+    <p><i>“When one falls, we continue.”</i></p>
 
     <h2>Core Expertise</h2>
     <ul>
-      <li>Tactical Combat Planning</li>
-      <li>Frontline Leadership & Morale Management</li>
-      <li>Heavy Weapon Proficiency</li>
-      <li>Risk Assessment & Survival Techniques</li>
+      <li>Analysis of Ancient Technologies</li>
+      <li>Equipment Calibration & Field Maintenance</li>
+      <li>Defense System Deployment</li>
+      <li>Data Collection & Anomaly Detection</li>
     </ul>
 
     <h2>Profile Summary</h2>
-    <p>Gustave is a battle-hardened veteran and the backbone of Expedition 33. 
-       With experience from countless missions, he oversees every tactical decision 
-       made in the war against the Paintress.</p>
+    <p>Lune is the mind behind the expedition’s technology. 
+       Her understanding of ancient mechanisms and magical artifacts 
+       is key to decoding the Paintress’ secrets and keeping the team operational.</p>
   </div>
 
   <footer>© 2025 Expedition 33 — For Those Who Come After</footer>
@@ -103,4 +90,16 @@ server {
         try_files $uri $uri/ =404;
     }
 }
+```
+
+```
+ln -s /etc/nginx/sites-available/jarkom /etc/nginx/sites-enabled/jarkom
+```
+
+```
+service nginx restart
+```
+
+```
+nginx -t
 ```
