@@ -34,7 +34,9 @@ zone "gustave33.com" {
 };
 ```
 
-`nano /etc/bind/db.lune33.com`
+```
+nano /etc/bind/db.lune33.com
+```
 
 ```
 $TTL 86400
