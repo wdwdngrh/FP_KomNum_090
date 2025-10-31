@@ -102,10 +102,10 @@ server {
     server_name sciel33.com;
 
     root /var/www/html;
-    index profile_sciel.html;
-                               
-    access_log /tmp/access.log custom_log;
-    error_log  /tmp/error.log;
+    index info.html;
+
+    access_log /tmp/access_info.log;
+    error_log /tmp/error_info.log;
 
     location / {
         try_files $uri $uri/ =404;
