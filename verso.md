@@ -85,6 +85,10 @@ $TTL 86400
 ```
 
 ```
+mkdir /etc/bind/delegasi
+```
+
+```
 cp /etc/bind/slaves/db.gustave33.com /etc/bind/delegasi/expedition.gustave33.com
 ```
 
