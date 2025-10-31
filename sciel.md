@@ -114,6 +114,14 @@ server {
 ```
 
 ```
+nano /var/www/html/info.html
+```
+
+```
+
+```
+
+```
 ln -s /etc/nginx/sites-available/jarkom /etc/nginx/sites-enabled/jarkom
 ```
 
