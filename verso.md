@@ -30,7 +30,7 @@ zone "gustave33.com" {
 
 zone "expedition.gustave33.com" {
     type master;
-    file "delegasi/db.expedition.gustave33.com"; // lokasi file db
+    file "delegasi/expedition.gustave33.com"; // lokasi file db
 };
 ```
 
