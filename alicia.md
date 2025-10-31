@@ -45,5 +45,5 @@ nginx -t
 ```
 
 ```
-
+service nginx restart
 ```
