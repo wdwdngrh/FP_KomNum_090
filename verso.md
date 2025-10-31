@@ -111,5 +111,13 @@ expedition  IN A      10.24.2.3
 ```
 
 ```
+nano /etc/bind/named.conf.options
+```
+
+```
+allow-query{any;};
+```
+
+```
 named -g -c /etc/bind/named.conf.local
 ```
