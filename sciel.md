@@ -72,6 +72,10 @@ nano /var/www/html/profile_sciel.html
 ```
 
 ```
+log_format custom_log '[$time_local] Jarkom Node Sciel Access from $remote_addr using method "$request" returned status $status with $body_bytes_sent bytes sent in $request_time seconds';
+```
+
+```
 nano /etc/nginx/sites-available/jarkom
 ```
 
@@ -82,8 +86,23 @@ server {
 
     root /var/www/html;
     index profile_sciel.html;
+                               
+    access_log /tmp/access.log custom_log;
+    error_log  /tmp/error.log;
 
-    log_format custom_log '[$time_local] Jarkom Node Sciel Access from $remote_addr using method "$request" returned status $status with $body_bytes_sent bytes sent in $request_time seconds';
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}
+```
+
+```
+server {
+    listen 8100;
+    server_name sciel33.com;
+
+    root /var/www/html;
+    index profile_sciel.html;
                                
     access_log /tmp/access.log custom_log;
     error_log  /tmp/error.log;
