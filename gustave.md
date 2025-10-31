@@ -96,7 +96,9 @@ server {
     root /var/www/html;
     index profile_gustave.html;
 
-    access_log /tmp/access.log;
+    log_format custom_log '[$time_local] Jarkom Node Gustave Access from $remote_addr using method "$request" returned status $status with $body_bytes_sent bytes sent in $request_time seconds';
+                               
+    access_log /tmp/access.log custom_log;
     error_log  /tmp/error.log;
 
     location / {
