@@ -32,6 +32,33 @@ zone "gustave33.com" {
     also-notify { 10.24.3.2; };
     allow-transfer { 10.24.3.2; };
 };
+
+zone "expeditioners.com" {
+    type master;
+    file "db.expeditioners.com";
+    also-notify { 10.24.3.2; };
+    allow-transfer { 10.24.3.2; };
+};
+```
+
+```
+nano /etc/bind/db.expeditioners.com
+```
+
+```
+$TTL 86400
+@ IN SOA ns1.alicia.com. root.alicia.com. (
+    7 ; serial
+    3600 ; refresh
+    1800 ; retry
+    604800 ; expire
+    86400 ) ; minimum
+
+@   IN NS     ns1.alicia.com.
+
+@   IN A      10.24.4.1
+
+ns1 IN A      10.24.4.1
 ```
 
 ```
