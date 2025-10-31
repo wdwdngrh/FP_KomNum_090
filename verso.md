@@ -27,6 +27,11 @@ zone "gustave33.com" {
     file "slaves/db.gustave33.com"; // lokasi file db
     masters { 10.24.3.1; }; //ip dns master
 };
+
+zone "expedition.gustave33.com" {
+    type master;
+    file "delegasi/db.gustave33.com"; // lokasi file db
+};
 ```
 
 ```
