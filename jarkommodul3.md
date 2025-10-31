@@ -55,7 +55,9 @@ www IN A      10.24.2.1
 exp IN CNAME  lune33.com.
 ```
 
-`nano /etc/bind/db.sciel33.com`
+```
+nano /etc/bind/db.sciel33.com
+```
 
 ```
 $TTL 86400
@@ -76,7 +78,9 @@ www IN A      10.24.2.2
 exp IN CNAME  sciel33.com.
 ```
 
-`nano /etc/bind/db.gustave33.com`
+```
+nano /etc/bind/db.gustave33.com
+```
 
 ```
 $TTL 86400
@@ -97,4 +101,6 @@ www         IN A      10.24.2.3
 expedition  IN CNAME  gustave.com.
 ```
 
-`named -4 -g -c /etc/bind/named.conf.local`
+```
+named -4 -g -c /etc/bind/named.conf.local
+```
